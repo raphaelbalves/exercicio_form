@@ -15,26 +15,29 @@
         <div id="segunda-div">
             <h2>Preencha seu endereço</h2>
             <hr>
-            <form action="">
+            <form method="get" action="">
                 <div id="form">
                     <label for="cep">CEP</label>
-                    <input type="number" name="" id="cep" placeholder="Ex: 60044466">
-                    <label for="log">Logradouro</label>
-                    <input type="text" name="" id="log" placeholder="Ex: Rua Martinica">
-                    <label for="num">Número</label>
-                    <input type="number" name="" id="num" placeholder="Ex: 123">
+                    <input type="number" name="cep" id="cep" placeholder="Ex: 60040470" value="" size="10" maxlength="9"
+                    onblur="pesquisacep(this.value);">
+                    <label for="rua">Rua</label>
+                    <input type="text" name="rua" id="rua" placeholder="Ex: Rua Martinica">
+                    <label for="numero">Número</label>
+                    <input type="number" name="numero" id="numero" placeholder="Ex: 123">
                     <label for="bairro">Bairro</label>
-                    <input type="text" name="" id="bairro" placeholder="Ex: Dos Prazeres">
-                    <label for="cid">Cidade</label>
-                    <input type="text" name="" id="cid" placeholder="Ex: Buracópolis">
+                    <input type="text" name="bairro" id="bairro" placeholder="Ex: Dos Prazeres">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" name="cidade" id="cidade" placeholder="Ex: Buracópolis">
                     <label for="uf">UF</label>
-                    <input type="text" name="" id="uf" placeholder="Ex: FU">
+                    <input type="text" name="uf" id="uf" placeholder="Ex: CE">
                     <input type="submit" value="Enviar" id="button">
                 </div>                
             </form>
 
         </div>
     </div>
+
+    <script src="script.js"></script>
     
 </body>
 </html>
